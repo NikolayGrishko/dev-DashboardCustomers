@@ -1,0 +1,40 @@
+.customers {
+    .template-salutation {
+        margin: 0 0 51px 0;
+        font-size: 24px;
+        font-weight: 500;
+        height: 36px;
+        width: 180px;
+    }
+
+    .customers-data {
+        display: flex;
+        flex-direction: column;
+
+        &__row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .search {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                max-width: 216px;
+                height: 38px;
+            }
+        
+            .members-spectr {
+                font-size: 22px;
+                font-weight: 600;
+                margin: 0;
+            }
+        
+            .members-status {
+                font-size: 14px;
+                font-weight: 400;
+                margin: 0;
+            }
+        }
+    }
+}
