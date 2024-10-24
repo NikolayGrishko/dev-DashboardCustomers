@@ -9,7 +9,7 @@
     height: 100%;
     margin: 0;
     background-color: #fff;
-    box-shadow: 0 0 80px 0 $bg-page;
+    box-shadow: 0 10px 60px 0 $main-shadow;
     padding: 37px 28px 76px;
 
     &-logo-link {
@@ -90,7 +90,7 @@
             }
 
             &:hover {
-                box-shadow: 2px 2px 20px 8px $bg-page;
+                box-shadow: 2px 2px 20px 8px $main-shadow;
             }
 
             &:active {
