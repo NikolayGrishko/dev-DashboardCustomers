@@ -77,6 +77,17 @@
 
             .table-head {
                 height: 49px;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 1px;
+                    background-color: #eeeeee;
+                    width: 968px;
+                    right: -42px;
+                    bottom: 0px;
+                }
 
                 th {
                     color: $color-secondary;
@@ -151,6 +162,21 @@
                         border-color: $color-inactive;
                     }
                 }
+            }
+        }
+
+        &__footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 24px;
+            margin: 31px 0 1px;
+
+            .footer-statistic {
+                font-size: 14px;
+                font-weight: 500;
+                color: $color-secondary;
+                margin: 2px 0 1px;
             }
         }
     }
