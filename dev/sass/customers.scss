@@ -83,7 +83,7 @@
                     content: "";
                     position: absolute;
                     height: 1px;
-                    background-color: #eeeeee;
+                    background-color: $table-line;
                     width: 968px;
                     right: -42px;
                     bottom: 0px;
@@ -165,18 +165,71 @@
             }
         }
 
-        &__footer {
+        &__nav {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             height: 24px;
             margin: 31px 0 1px;
 
-            .footer-statistic {
+            .nav-statistic {
                 font-size: 14px;
                 font-weight: 500;
                 color: $color-secondary;
                 margin: 2px 0 1px;
+            }
+
+            .nav-pagination {
+
+                .table-pagination {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 0;
+                    list-style: none;
+                    gap: 11px;
+
+                    &__item {
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    &__link {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 26px;
+                        height: 24px;
+                        border: 1px solid $table-line;
+                        border-radius: 4px;
+                        background-color: $bg-page;
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: $color-page;
+                        box-shadow: none;
+
+                        &.arrow {
+                            background: $bg-page url(assets/img/arrow-next.svg) center no-repeat;
+                            &.prev  {
+                               transform: rotate(180deg);
+                            }
+                        }
+                        
+                        &:hover {
+                            background-color: #fff;
+                            border-color: $color-page;
+                        }
+                        
+                        &:focus {
+                            background-color: $bg-hover;
+                            border-color: $bg-hover;
+                            color: $bg-search;
+                            &.arrow {
+                                background-color: $bg-page;
+                                border-color: $table-line;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
