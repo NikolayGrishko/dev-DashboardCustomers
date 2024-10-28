@@ -84,7 +84,8 @@
                     position: absolute;
                     height: 1px;
                     background-color: $table-line;
-                    width: 968px;
+                    max-width: 968px;
+                    width: 110%;
                     right: -42px;
                     bottom: 0px;
                 }
@@ -118,6 +119,9 @@
             }
 
             .table-body {
+                height: 536px;
+                overflow: hidden;
+
                 tr {
                     width: auto;
                     height: 67px;
@@ -219,7 +223,7 @@
                             border-color: $color-page;
                         }
                         
-                        &:focus {
+                        &.show {
                             background-color: $bg-hover;
                             border-color: $bg-hover;
                             color: $bg-search;

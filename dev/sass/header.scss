@@ -98,7 +98,7 @@
                 transition: 0.2s;
             }
 
-            &:focus {
+            &.is-active {
                 background-color: $bg-hover;
                 transition: 0.8s;
                 color: #fff;
