@@ -11,6 +11,7 @@
     background-color: #fff;
     box-shadow: 0 10px 60px 0 $main-shadow;
     padding: 37px 28px 76px;
+    z-index: 1;
 
     &-logo-link {
         display: flex;
@@ -36,11 +37,11 @@
     &-nav {
         display: flex;
         flex-direction: column;
-        margin-bottom: 551px;
         
         &__list {
             display: flex;
             flex-direction: column;
+            margin-bottom: 551px;
             padding: 0;
         }
 

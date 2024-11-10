@@ -1,2 +1,28 @@
 @media screen and (max-width: 1199px) {
+    .container {
+        margin: 0 auto;
+    }
+    
+    .header {
+        max-width: 260px;
+
+        &-logo-link {
+            h3 {
+                font-size: 24px;
+            }
+        }
+
+        &-nav__item {
+            width: 204px;
+        }
+    }
+
+    .customers {
+        padding-left: 260px;
+
+        &-data__table .table-head::after {
+            left: -38px;
+        }
+    }
+
 }
